@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Dairy Management System</title>
+    <style>
+        /* Some basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        
+        }
+        .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    padding: 20px;
+  }
+  .header h2{
+    font-size: 1.5em;
+  }
+        
+        .navigation a{
+    position: relative;
+    color: white;
+    font-size: 1.1em;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+    float: right;
+}
+
+.navigation a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px; 
+    background: black;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+.navigation a:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.container {
+            width: 100%;
+            margin: 120px auto 0;
+            padding-top: 5%;
+            
+        }
+
+        .about-text h2 {
+            color: green;
+            font-family: 'Poppins', sans-serif;
+            font-size: 45px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            align-items: end;
+            display: inline;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+
+        
+        
+    </style>
+    <!--bootstrap css-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <header class="header">
+        <div>
+        <h2>About Us</h2>
+    <nav class="navigation">
+        <a href="main.php" class="effect"><i class="fas fa-dolly-flatbed"></i>HOME</a>
+        <a href="service.php" class="effect"><i class="fas fa-info-circle"></i>SERVICES</a>
+    </nav>
+        </div>
+</header>
+
+    <div class="container">
+        <div class="about-text">
+        <h2>Welcome to Our Services</h2>
+        <p>Welcome to our Dairy Management System! We are a dedicated team passionate about revolutionizing the dairy industry through technology.</p>
+        
+        
+        <p>Our mission is to streamline dairy farm operations, enhance productivity, and ensure the efficient management of dairy products through innovative software solutions.</p>
+        
+    
+        <p>We envision a future where dairy farmers can optimize their resources, improve milk quality, and contribute to the sustainable growth of the dairy sector with our user-friendly management system.</p>
+        
+        <h2>Our Values</h2>
+        <p>Empowering dairy farmers with user-friendly technology.</p>
+        <p>Promoting sustainability and animal welfare in dairy farming practices.</p>
+        <p>Ensuring the quality and safety of dairy products.</p>
+        <p>Continuously innovating and adapting to meet industry needs.</p>
+        <p>Building strong relationships with our clients and stakeholders.</p>
+        
+        <h2>Meet Our Team</h2>
+        <p>Our team consists of talented individuals from diverse backgrounds, including software development, agriculture, and business management. Together, we strive to deliver cutting-edge solutions tailored to the needs of dairy farmers worldwide.</p>
+        
+        <p>For any inquiries or collaboration opportunities, feel free to <a href="contact.html">contact us</a>.</p>
+        </div>
+    </div>
+
+    <!--The JavaScript functionalities of some components like dropdowns, tabs -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
